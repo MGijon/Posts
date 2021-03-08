@@ -6,7 +6,7 @@ Here I save scripts, images, gifs and other things from my posts in Medium, Towa
 
 ## Content
 
-| Post | Abstract | Folder | Tags | date |
+| Post | Abstract | Folder | Tags | Date |
 | --- | --- | --- | --- | --- |
 | How do I [...] a Machine Learning Engineer | [link](#Rich1) | [Rich_ML_Workflow](https://github.com/MGijon/Posts/tree/main/Rich_ML_Workflow) | <img src="https://img.shields.io/badge/-Python-blue"> <img src="https://img.shields.io/badge/-Rich-red"> | 10-24-2020 |
 | | | | | |
