@@ -51,12 +51,12 @@ def plot2D_level_curves(function=function_sphere, a=sphere_a, b=sphere_b, title=
     CS = ax.contour(X, Y, Z)
     ax.clabel(CS, inline=1, fontsize=10)
     ax.set_title(title)
+    plt.savefig("images/" + title  + "level_curves.png")
     plt.show()
 
 if __name__ == "__main__":
     
     # 3D Plots 
-    """
     simple3D_plot(function=function_sphere, a=sphere_a, b=sphere_b, title="Sphere function")
     simple3D_plot(function=function_ackley, a=ackley_a, b=ackley_b, title="Ackley´s function")
     simple3D_plot(function=function_himmelblau, a=himmelblau_a, b=himmelblau_b, title="Himmelblau´s function")
@@ -67,3 +67,4 @@ if __name__ == "__main__":
     plot2D_level_curves(function=function_ackley, a=ackley_a, b=ackley_b, title="Ackley´s function")
     plot2D_level_curves(function=function_himmelblau, a=himmelblau_a, b=himmelblau_b, title="Himmelblau´s function")
     plot2D_level_curves(function=function_rastrigin, a=rastrigin_a, b=rastrigin_b, title="Rastrigin´s function")
+    """

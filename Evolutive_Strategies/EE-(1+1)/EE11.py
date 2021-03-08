@@ -88,22 +88,24 @@ def plot_paths(function, boundaries, paths):
     # Function
     fig = plt.figure()
     ax = plt.axes(projection='3d')
-    ax.contour3D(X, Y, Z, 50, cmap='viridis')
+    ax.contour3D(X, Y, Z, 50, cmap='viridis', alpha=.3)
     ax.set_xlabel('x')
     ax.set_ylabel('y')
     ax.set_zlabel('z')
+    # Focus on the real solution of the problem
+    ax.scatter(xs=[0], ys=[0], zs=[0], color="red", marker="o")
 
     # Path in 3D 
     for path in paths:
         xs = [x[0] for x in path]
         ys = [y[1] for y in path]
         zs = [function(element) for element in path]
+        ax.scatter(xs, ys, zs)
         ax.plot(xs, ys, zs)
 
     # show the figure
     plt.show()
 
-# N-Dimensional!!
 def progress_curves(function, boundaries, paths):
     """Plot progress curves.
     :param function: function to be represented.
@@ -113,11 +115,13 @@ def progress_curves(function, boundaries, paths):
     plt.figure(figsize=(7, 7))
     for exp in paths:
         plt.plot(range(0, len(paths[0])), [function(x) for x in exp], alpha=0.4)
+
     plt.title("Progress curves")
     plt.suptitle("")
     plt.xlabel("Number of generations")
     plt.ylabel("Fitness value")
     plt.show()
+
 
 
 if __name__=='__main__':
@@ -142,7 +146,6 @@ if __name__=='__main__':
     progress_curves(function=function_sphere,
                     boundaries=bounds,
                     paths=experiments_results)
-
 
     # Ackley ---------------------------------------------------------------- #
     bounds = [(ackley_a, ackley_b) for _ in range(DIMENSIONALITY)]
