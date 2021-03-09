@@ -9,7 +9,7 @@ Here I save scripts, images, gifs and other things from my posts in Medium, Towa
 | Post | Abstract | Folder | Tags | Date |
 | --- | --- | --- | --- | --- |
 | How do I [...] a Machine Learning Engineer | [link](#Rich1) | [Rich_ML_Workflow](https://github.com/MGijon/Posts/tree/main/Rich_ML_Workflow) | <img src="https://img.shields.io/badge/-Python-blue"> <img src="https://img.shields.io/badge/-Rich-red"> | 10-24-2020 |
-| | | | | |
+| The [...]: the EE-(1+1) algorithm| [link](#EE11) | [Evolutive_Strategies/EE-(1+1)/](https://github.com/MGijon/Posts/tree/main/Evolutive_Strategies/EE-(1%2B1)) | <img src="https://img.shields.io/badge/-Python-blue"> <img src="https://img.shields.io/badge/-Evolution%20Strategy-green"> | 03-09-2021 |
 
 ***
 
@@ -27,7 +27,10 @@ Here I save scripts, images, gifs and other things from my posts in Medium, Towa
 </p>
 
 
+### The starting point of Evolution Strategies: the EE-(1+1) algorithm
+#### [LINK](https://mgijon94.medium.com/the-starting-point-of-evolution-strategies-the-ee-1-1-algorithm-511ea3f2edf7)
 
+**Abstract**:  cooming soon
 
 
 
