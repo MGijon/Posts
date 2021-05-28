@@ -11,7 +11,7 @@ def help() -> None:
     print("                               -·-")
     print("COMMANDS:")
     print("\b-h        print help")
-    print("\b-f        filepath (mandatory). Does not need ''. ")
+    print("\b-f        filepath (mandatory). Does not need ''")
     print("\b-d        csv delimiter (, by default)")
     print("\b-r        if present use the library Rich")
     print("\b-l        number of lines to be shown from the top and the bottom of the file")
