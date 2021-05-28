@@ -2,17 +2,17 @@
 """
 import sys
 import csv
-from rich.console import Console
-from rich.table import Table
-
 
 def help() -> None:
     """Prints help menu."""
+    print("\n                           CSV INSPECTOR") 
     print("This script is written for printing a fast visualization of a .csv file.")
     print("\b-h        print help")
     print("\b-f        filepath (mandatory)")
     print("\b-d        csv delimiter (, by default)")
-
+    print("\b-r        if presesnt use the library Rich")
+    print("\b-l        number of lines to be shown from the top and the bottom of the file")
+    print("\n")
 
 ops = [opt for opt in sys.argv[1:] if opt.startswith("-")]
 arg = [arg for arg in sys.argv[1:] if not arg.startswith("-")]
@@ -20,11 +20,23 @@ arg = [arg for arg in sys.argv[1:] if not arg.startswith("-")]
 # Extract the user's options
 ops_arg = dict(zip(ops, arg))
 
+print(ops_arg)
+
 # Add values by default
 if "-d" not in ops:
     ops_arg["-d"] = ","
 
-# Starts the process
+if "-r" not in ops:
+    ops_arg["-r"] = False
+else:
+    ops_arg["-r"] = True
+
+if "-l" not in ops:
+    ops_arg["-l"] = None
+
+
+print(ops_arg)
+
 if "-h" in ops:
     help()
 else:
@@ -45,23 +57,39 @@ else:
                     data.append(row)
                 line_count += 1
 
-            #print(header)
-            #print(data)
+
+        # Print without Rich
+        if not ops_arg["-r"]:
+            header_str = "    "
+            for element in header:
+                header_str += element + " | "
+            
+            print(header_str[:-3])
+            subheader_str = "    "
+            for element in range(len(header_str[:-7])):
+                subheader_str += "-"
+            print(subheader_str)
+
+            #for element in data:
 
 
+        # Print using Rich 
+        if ops_arg["-r"]:
+
+            from rich.console import Console
+            from rich.table import Table
+    
             table = Table(show_footer=False)
             console = Console()
-            
+                
             # Adding the header
             for element in header:
                 table.add_column(element)
-            
+                
             # Adding the data
             for row in data:
                 table.add_row(*row)
             
-            
-
             console.print(table, justify="center")
-
+            # 
 
