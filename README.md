@@ -8,6 +8,7 @@ Here I save scripts, images, gifs and other things from my posts in Medium, Towa
 | --- | --- | --- | --- | --- |
 | How do I [...] a Machine Learning Engineer | [link](#Rich1) | [Rich_ML_Workflow](https://github.com/MGijon/Posts/tree/main/Rich_ML_Workflow) | <img src="https://img.shields.io/badge/-Python-blue"> <img src="https://img.shields.io/badge/-Rich-red"> | 10-24-2020 |
 | The [...]: the EE-(1+1) algorithm| [link](#EE11) | [Evolutive_Strategies/EE-(1+1)/](https://github.com/MGijon/Posts/tree/main/Evolutive_Strategies/EE-(1%2B1)) | <img src="https://img.shields.io/badge/-Python-blue"> <img src="https://img.shields.io/badge/-Evolution%20Strategy-green"> | 03-09-2021 |
+| --- | [link](#Rich2) | [Rich_Tables](https://github.com/MGijon/Posts/tree/main/Rich_Tables) | <img src="https://img.shields.io/badge/-Python-blue"> <img src="https://img.shields.io/badge/-Rich-red"> <img src="https://img.shields.io/badge/-CLI-black"> | 05-28-2021 |
 
 ***
 
@@ -33,11 +34,15 @@ Here I save scripts, images, gifs and other things from my posts in Medium, Towa
   <img src="https://raw.githubusercontent.com/MGijon/Posts/main/Evolutive_Strategies/EE-(1%2B1)/images/AckleyExp1.png" height="250"/>
 </p>
 
+<a name="Rich2"></a>
 
 
 
 
-
+<p float="left">
+  <img src="https://raw.githubusercontent.com/MGijon/Posts/main/Rich_Tables/images/Comparation between two modes.png" height="250"/>
+  <img src="https://raw.githubusercontent.com/MGijon/Posts/main/Rich_Tables/images/Example of 30 elements table.png" height="250"/>
+</p>
 
 <!--
 None yet: <img src="https://img.shields.io/badge/-None%20Yet-orange">
