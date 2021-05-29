@@ -8,7 +8,7 @@ Here I save scripts, images, gifs and other things from my posts in Medium, Towa
 | --- | --- | --- | --- | --- |
 | How do I [...] a Machine Learning Engineer | [link](#Rich1) | [Rich_ML_Workflow](https://github.com/MGijon/Posts/tree/main/Rich_ML_Workflow) | <img src="https://img.shields.io/badge/-Python-blue"> <img src="https://img.shields.io/badge/-Rich-red"> | 10-24-2020 |
 | The [...]: the EE-(1+1) algorithm| [link](#EE11) | [Evolutive_Strategies/EE-(1+1)/](https://github.com/MGijon/Posts/tree/main/Evolutive_Strategies/EE-(1%2B1)) | <img src="https://img.shields.io/badge/-Python-blue"> <img src="https://img.shields.io/badge/-Evolution%20Strategy-green"> | 03-09-2021 |
-| --- | [link](#Rich2) | [Rich_Tables](https://github.com/MGijon/Posts/tree/main/Rich_Tables) | <img src="https://img.shields.io/badge/-Python-blue"> <img src="https://img.shields.io/badge/-Rich-red"> <img src="https://img.shields.io/badge/-CLI-black"> | 05-28-2021 |
+| CLI written in Python to fast exploration of csv [...] | [link](#Rich2) | [Rich_Tables](https://github.com/MGijon/Posts/tree/main/Rich_Tables) | <img src="https://img.shields.io/badge/-Python-blue"> <img src="https://img.shields.io/badge/-Rich-red"> <img src="https://img.shields.io/badge/-CLI-black"> | 05-28-2021 |
 
 ***
 
@@ -35,9 +35,10 @@ Here I save scripts, images, gifs and other things from my posts in Medium, Towa
 </p>
 
 <a name="Rich2"></a>
+### CLI written in Python to fast exploration of csv files with or without additional packages
+#### [LINK](https://mgijon94.medium.com/cli-written-in-python-to-fast-exploration-of-csv-files-with-or-without-additional-packages-9a37a908726c)
 
-
-
+**Abstract**: I created this script to obtain a fast visualization of the structure of a .csv file without exit the command line and (if I need it) without installing additional packages.
 
 <p float="left">
   <img src="https://raw.githubusercontent.com/MGijon/Posts/main/Rich_Tables/images/Comparation between two modes.png" height="250"/>
