@@ -1,0 +1,17 @@
+services:
+  kestra:
+    image: kestra/kestra:latest
+    command: server local
+    ports:
+      - "8082:8080"
+    environment:
+      KESTRA_CONFIGURATION: |
+        kestra:
+          storage:
+            type: local
+            local:
+              basePath: /app/storage
+    volumes:
+      - kestra_data:/app/storage
+volumes:
+  kestra_data:

@@ -1,0 +1,11 @@
+services:
+  dagster:
+    image: dagster/dagster-celery-k8s:latest # Using a standard image for the webserver
+    container_name: dagster_etl
+    entrypoint: ["dagster-webserver", "-h", "0.0.0.0", "-p", "3000"]
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./scripts:/opt/dagster/app
+    environment:
+      - DAGSTER_HOME=/opt/dagster/app

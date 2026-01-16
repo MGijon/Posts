@@ -1,0 +1,24 @@
+services:
+  # The Scheduler
+  ofelia:
+    image: mcuadros/ofelia:latest
+    container_name: ofelia_scheduler
+    depends_on:
+      - etl_worker
+    command: daemon --docker
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+
+  # The Worker (This container stays alive, and Ofelia executes into it)
+  etl_worker:
+    image: python:3.11-slim
+    container_name: etl_worker
+    volumes:
+      - ./scripts:/app
+    working_dir: /app
+    command: tail -f /dev/null  # Keeps the container running so Ofelia can exec into it
+    labels:
+      ofelia.enabled: "true"
+      # This schedule runs every minute
+      ofelia.job-exec.test_script.schedule: "@every 1m"
+      ofelia.job-exec.test_script.command: "python3 test_job.py"
