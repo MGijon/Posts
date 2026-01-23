@@ -151,3 +151,7 @@ To keep the repository clean and the analysis reliable:
 * [ ] Add "Scheduling Latency" metrics (Time from trigger to stdout).
 * [ ] Benchmarks for K3s/Kubernetes resource usage.
 * [ ] Integration tests for Rust/Wasm tasks.
+
+## Acknowledgments
+
+A huge thank you to the r/mlops subreddit for being the sounding board for this project. The original discussion sparked the "Clean Slate" methodology used here and pushed me to look beyond the industry giants toward more efficient, Docker-native alternatives. You can find the original thread and the community's early feedback [here](https://www.reddit.com/r/mlops/comments/1qbte3c/seeking_a_lightweight_orchestrator_for_docker/).
