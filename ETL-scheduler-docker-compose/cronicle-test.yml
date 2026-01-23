@@ -1,0 +1,27 @@
+services:
+  cronicle:
+    image: soulteary/cronicle:latest
+    container_name: cronicle_etl
+    ports:
+      - "8081:3012"
+    environment:
+      - CRONICLE_foreground=1
+      - CRONICLE_echo=1
+      # Crucial: This tells Cronicle how to reach itself for the UI
+      - CRONICLE_base_app_url=http://localhost:8081
+    volumes:
+      - ./scripts:/opt/cronicle/scripts
+      - cronicle_data:/opt/cronicle/data
+      - cronicle_logs:/opt/cronicle/logs
+    # We use a custom command to install python3 before starting Cronicle
+    entrypoint: 
+      - /bin/sh
+      - -c
+      - |
+        apk add --no-cache python3
+        /opt/cronicle/bin/control.sh start
+        tail -f /opt/cronicle/logs/all.log
+
+volumes:
+  cronicle_data:
+  cronicle_logs:

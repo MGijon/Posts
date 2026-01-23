@@ -1,0 +1,17 @@
+services:
+  supervisord:
+    build:
+      context: .
+      dockerfile_inline: |
+        FROM python:3.11-slim
+        RUN apt-get update && apt-get install -y supervisor cron
+        COPY ./scripts /app
+        # Add cron job: run every minute
+        #RUN echo "* * * * * root python3 /app/test_job.py >> /var/log/cron.log 2>&1" > /etc/cron.d/etl-cron
+        # Use this line to be able to see the standard output of the script... observability is hard...
+        RUN echo "* * * * * root python3 /app/test_job.py > /proc/1/fd/1 2>&1" > /etc/cron.d/etl-cron
+        RUN chmod 0644 /etc/cron.d/etl-cron
+        CMD ["/usr/bin/supervisord", "-n"]
+    container_name: supervisor_etl
+    volumes:
+      - ./scripts:/app
