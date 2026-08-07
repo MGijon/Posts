@@ -7,9 +7,9 @@ Here I save scripts, images, gifs and other things from my posts in Medium, Towa
 | Post | Abstract | Folder | Tags | Date |
 | --- | --- | --- | --- | --- |
 | Benchmarking 6 Lightweight Alternatives to Airflow | [link](#AirflowAlternatives) | [ETL-scheduler-docker-compose](https://github.com/MGijon/Posts/tree/main/ETL-scheduler-docker-compose) | <img src="https://img.shields.io/badge/-MLOps-yellow"> | 28th June 2026 |
-| CLI written in Python to fast exploration of csv [...] | [link](#Rich2) | [Rich_Tables](https://github.com/MGijon/Posts/tree/main/Rich_Tables) | <img src="https://img.shields.io/badge/-Python-blue"> <img src="https://img.shields.io/badge/-Rich-red"> <img src="https://img.shields.io/badge/-CLI-black"> | 05-28-2021 |
-| The [...]: the EE-(1+1) algorithm| [link](#EE11) | [Evolutive_Strategies/EE-(1+1)/](https://github.com/MGijon/Posts/tree/main/Evolutive_Strategies/EE-(1%2B1)) | <img src="https://img.shields.io/badge/-Python-blue"> <img src="https://img.shields.io/badge/-Evolution%20Strategy-green"> | 03-09-2021 |
-| How do I [...] a Machine Learning Engineer | [link](#Rich1) | [Rich_ML_Workflow](https://github.com/MGijon/Posts/tree/main/Rich_ML_Workflow) | <img src="https://img.shields.io/badge/-Python-blue"> <img src="https://img.shields.io/badge/-Rich-red"> | 10-24-2020 |
+| CLI written in Python to fast exploration of csv [...] | [link](#Rich2) | [Rich_Tables](https://github.com/MGijon/Posts/tree/main/Rich_Tables) | <img src="https://img.shields.io/badge/-Python-blue"> <img src="https://img.shields.io/badge/-Rich-red"> <img src="https://img.shields.io/badge/-CLI-black"> | 28th May 2021 |
+| The [...]: the EE-(1+1) algorithm| [link](#EE11) | [Evolutive_Strategies/EE-(1+1)/](https://github.com/MGijon/Posts/tree/main/Evolutive_Strategies/EE-(1%2B1)) | <img src="https://img.shields.io/badge/-Python-blue"> <img src="https://img.shields.io/badge/-Evolution%20Strategy-green"> | 03rd September 2021 |
+| How do I [...] a Machine Learning Engineer | [link](#Rich1) | [Rich_ML_Workflow](https://github.com/MGijon/Posts/tree/main/Rich_ML_Workflow) | <img src="https://img.shields.io/badge/-Python-blue"> <img src="https://img.shields.io/badge/-Rich-red"> | 24th October 2020 |
 
 ***
 
@@ -18,6 +18,8 @@ Here I save scripts, images, gifs and other things from my posts in Medium, Towa
 #### [LINK](https://mgijon94.medium.com/orchestration-without-the-bloat-benchmarking-6-lightweight-alternatives-to-airflow-c68413ba699c)
 
 **Abstract**: To avoid the heavy resource tax of Apache Airflow for my Docker-based MVP, I benchmarked five orchestrators (Ofelia, Supervisord, Cronicle, Kestra, and Airflow) using a strict "Clean Slate" isolation protocol. Using my custom benchmarking script, I measured RAM footprint (idle vs. peak) and observability/logging ease to find a lightweight, polyglot-friendly tool with a smooth migration path from Docker Compose to Kubernetes.
+
+---
 
 <!-- ====================================================================== -->
 <a name="Rich2"></a>
@@ -31,6 +33,8 @@ Here I save scripts, images, gifs and other things from my posts in Medium, Towa
   <img src="https://raw.githubusercontent.com/MGijon/Posts/main/Rich_Tables/images/Example of 30 elements table.png" height="250"/>
 </p>
 
+---
+
 <!-- ====================================================================== -->
 <a name="EE11"></a>
 ### The starting point of Evolution Strategies: the EE-(1+1) algorithm
@@ -43,6 +47,8 @@ Here I save scripts, images, gifs and other things from my posts in Medium, Towa
   <img src="https://raw.githubusercontent.com/MGijon/Posts/main/Evolutive_Strategies/EE-(1%2B1)/images/AckleyExp1.png" height="250"/>
 </p>
 
+---
+
 <!-- ====================================================================== -->
 <a name="Rich1"></a>
 ### How do I incorporate Rich into my usual workflow as a Machine Learning Engineer
@@ -54,6 +60,7 @@ Here I save scripts, images, gifs and other things from my posts in Medium, Towa
   <img src="https://raw.githubusercontent.com/MGijon/Posts/main/Rich_ML_Workflow/images/Nice%20Table.png" height="250"/>
   <img src="https://raw.githubusercontent.com/MGijon/Posts/main/Rich_ML_Workflow/images/progressbar.gif" height="250"/>
 </p>
+
 <!--
 None yet: <img src="https://img.shields.io/badge/-None%20Yet-orange">
 Python: <img src="https://img.shields.io/badge/-Python-blue">
